@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/mediaqueries.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Gloria+Hallelujah&family=Jost&family=Neucha&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Skranji&family=Slabo+27px&family=Tajawal&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+    <header class="container-fluid header">
+
+    </header>
+    <nav id="nav" class="navbar navbar-expand-lg container-fluid">
+
+    </nav>
+
+
+<div id="formulariofondo" class="d-flex justify-content-center">
+    <form action="" class="needs-validation" id="contact_formulario" novalidate>
+        <div >
+            <h1>Contactanos!</h1>
+
+        <div class="form-group">
+            <label for="contact_nombre">Nombre:</label>
+            <input id="contact_nombre" type="text" maxlength=20 pattern="[A-Za-z]+" class="form-control" required></p>
+            <div class="text-danger invalid-feedback">Escribe tu nombre</div>
+        </div>
+        <div>
+            <label for="contact_apellido">Apellido:</label>
+            <input id="contact_apellido" type="text" class="form-control" maxlength=20 pattern="[A-Za-z]+" required>
+            <div class="text-danger invalid-feedback">Escribe tu apellido</div>
+        </div>
+        <div>
+            <label for="contact_correo">Correo electronico:</label>
+            <input id="contact_correo" class="form-control" minlength=0 maxlength=25 type="email" name="correo"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+            <div class="text-danger invalid-feedback">Escribe tu correo electronico</div>
+        </div>
+        <div>
+            <label for="contact_telefono">Telefono/celular:</label>
+            <input id="contact_telefono" class="form-control" type="tel" name="contacto" pattern="[0-9]{8,12}" required>
+            <div class="text-danger invalid-feedback">Escribe tu numero de telefono o celular</div>
+        </div>
+            <div>
+                <label for="contact_select">Selecciona tu motivo de consulta:</label>
+                <select name="select" class="form-select w-25" id="contact_select" >
+                    <option id="val0" class="text-secondary" value="value0" selected>-selecciona un motivo-</option>
+                    <option id="val1" value="value1">Cotizacion</option>
+                    <option id="val2" value="value2">servicios</option>
+                    <option id="val3" value="value3">Otro</option>
+                </select>
+                <div class="invalid-feedback text-danger">Debes seleccionar un motivo de consulta</div>
+            </div>
+            <div>
+                <label for="contact_textArea">te leemos:</label>
+
+                <textarea id="contact_textArea" class="form-control" name="textarea" rows="4" cols="50"></textarea>
+            </div>
+
+            <input type="submit" id="contact_submit" class="btn" value="enviar">
+        </div>
+        <div class="modal " id="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered " role="document">
+                <div class="modal-content alert">
+                    <div class="modal-body ">
+                        <p>Tu postulacion ha sido enviada exitosamente.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="contact_closeModal" class="btn " data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+    <footer>
+        <div id="footer" class="container-fluid d-flex flex-row"></div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="JS/navbar.js"></script>
+<script src="JS/contactForm.js"></script>
+
+</html>
